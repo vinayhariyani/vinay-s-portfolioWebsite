@@ -1,110 +1,71 @@
 import React from "react";
 import "./experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { MdWork } from "react-icons/md";
+
+const experienceData = [
+  {
+    id: 1,
+    role: "Software Development Engineer I",
+    company: "Signzy",
+    location: "Bangalore, India",
+    period: "April 2025 – January 2026",
+    responsibilities: [
+      "Led complete frontend development of Savings Account Onboarding journey for Yes Bank",
+      "Built responsive, high-performance interfaces using React",
+      "Developing internal product with Next.js, Tailwind CSS, implementing 2FA authentication",
+      "Converted Figma designs to production-ready UI and authored SRS documentation",
+    ],
+  },
+  {
+    id: 2,
+    role: "Frontend Developer",
+    company: "Dept/TeknoPoint",
+    location: "Mumbai, India",
+    period: "June 2023 – March 2025",
+    responsibilities: [
+      "Owned end-to-end development of My Opus mobile app (Aditya Birla Group) as sole React Native developer",
+      "Published app on App Store and Play Store, achieving 1K+ downloads",
+      "Implemented secure authentication system with native login/signup flows",
+      "Collaborated with product, design, and QA teams for feature delivery",
+    ],
+  },
+  {
+    id: 3,
+    role: "React and JavaScript Mentor",
+    company: "Xsyser Infosystem",
+    location: "Mumbai, India",
+    period: "Feb 2024 – May 2024",
+    responsibilities: [
+      "Mentored students in React and JavaScript fundamentals to advanced concepts",
+      "Taught state management using Redux Toolkit and Context API",
+      "Guided students through hands-on project implementation",
+    ],
+  },
+];
 
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>What Skills I have</h5>
-      <h2>My Experience</h2>
+      <h5>My Journey</h5>
+      <h2>Work Experience</h2>
       <div className="container experience_container">
-        <div className="experience_frontend">
-          <h3>FrontEnd Developement</h3>
-          <div className="experience_content">
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
+        {experienceData.map(({ id, role, company, location, period, responsibilities }) => (
+          <article key={id} className="experience_item">
+            <div className="experience_item-header">
+              <MdWork className="experience_icon" />
               <div>
-                <h4>HTML</h4>
-                <small className="text-light">Beginner</small>
+                <h3>{role}</h3>
+                <h4>{company}</h4>
+                <small className="text-light">{location} | {period}</small>
               </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>BootStap</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>Tailwind</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-          </div>
-        </div>
-        {/* END OF FRONTEND */}
-        <div className="experience_backend">
-          <h3>BackEnd Developement</h3>
-          <div className="experience_content">
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>MongoDB</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>SQL</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>PHP</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>Node.js</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience_details">
-              <BsPatchCheckFill className="experience_details-icon" />
-              <div>
-                <h4>Express.js</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-          </div>
-        </div>
+            </div>
+            <ul className="experience_responsibilities">
+              {responsibilities.map((resp, index) => (
+                <li key={index}>{resp}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
     </section>
   );

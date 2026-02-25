@@ -19,17 +19,17 @@ const About = () => {
 
         <div className="about_content">
           <div className="about_cards">
-            {/* <article className="about_card">
+            <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>3+ years of Experience</small>
+              <small>2+ years of Experience</small>
             </article>
 
             <article className="about_card">
               <FiUsers className="about_icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
-            </article> */}
+              <small>3 Clients</small>
+            </article>
 
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />

@@ -6,125 +6,110 @@ const Services = () => {
   return (
     <section id="services">
       <h5>What I Offer</h5>
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
 
       <div className="container service_container">
         <article className="service">
           <div className="service_head">
-            <h3>Non-Technical Sills</h3>
+            <h3>Languages</h3>
           </div>
           <div>
             <ul className="service_list">
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Cooperation</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Adaptability</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Creativity</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Enthusiasm</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Time management</p>
-              </li>
-              {/* <li>
-                <BiCheck className="service_list-icon" />
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-              </li> */}
-            </ul>
-          </div>
-        </article>
-        {/* END OF UI/UX */}
-
-        <article className="service">
-          <div className="service_head">
-            <h3>Technical Skills</h3>
-          </div>
-          <div>
-            <ul className="service_list">
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>HTML5</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>CSS3</p>
-              </li>
               <li>
                 <BiCheck className="service_list-icon" />
                 <p>JavaScript</p>
               </li>
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>ReactJS</p>
+                <p>SQL</p>
               </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Bootstrap</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Responsive Web Designing</p>
-              </li>
-              {/* <li>
-                <BiCheck className="service_list-icon" />
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-              </li>
-              <li>
-                <BiCheck className="service_list-icon" />
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-              </li> */}
             </ul>
           </div>
         </article>
-        {/* END OF WEB DEVELOPMENT */}
 
         <article className="service">
           <div className="service_head">
-            <h3>Essential Skills</h3>
+            <h3>Libraries & Frameworks</h3>
           </div>
           <div>
             <ul className="service_list">
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>Microsoft Word</p>
+                <p>React Native</p>
               </li>
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>Git and GitHub</p>
+                <p>React</p>
               </li>
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>Web Hosting</p>
+                <p>Next.js</p>
               </li>
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>Code Optimization</p>
+                <p>Redux Toolkit</p>
               </li>
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>Windows 10/11</p>
-              </li>
-              {/* <li>
-                <BiCheck className="service_list-icon" />
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+                <p>Recoil</p>
               </li>
               <li>
                 <BiCheck className="service_list-icon" />
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-              </li> */}
+                <p>Tailwind CSS</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Bootstrap</p>
+              </li>
             </ul>
           </div>
         </article>
-        {/* END OF CONTENT CREATION */}
+
+        <article className="service">
+          <div className="service_head">
+            <h3>Tools & Fundamentals</h3>
+          </div>
+          <div>
+            <ul className="service_list">
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Git & GitHub</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Firebase</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Android Studio</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Xcode</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>VS Code</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Jira</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>REST APIs</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Authentication & 2FA</p>
+              </li>
+              <li>
+                <BiCheck className="service_list-icon" />
+                <p>Responsive UI Design</p>
+              </li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
   );

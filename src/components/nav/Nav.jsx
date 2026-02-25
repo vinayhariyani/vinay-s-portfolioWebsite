@@ -2,6 +2,7 @@ import React from "react";
 import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
+import { MdWork } from "react-icons/md";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { FiMessageSquare } from "react-icons/fi";
@@ -25,6 +26,13 @@ const Nav = () => {
         className={activeNav === "#about" ? "active" : ""}
       >
         <AiOutlineUser />
+      </a>
+      <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+      >
+        <MdWork />
       </a>
       <a
         href="#services"
