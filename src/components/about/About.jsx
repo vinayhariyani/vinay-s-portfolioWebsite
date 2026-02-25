@@ -34,13 +34,18 @@ const About = () => {
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <small>7 Projects</small>
+              <small>4 Projects</small>
             </article>
           </div>
           <p>
-            A result oriented technology enthusiast, a quick learner with good
-            communication skills. Ability to tackle any Challenges with a
-            Positive & Can Do Attitude!
+            I'm a Frontend Developer with 2+ years of experience building
+            high-performance web and mobile applications using React, React
+            Native, and Next.js. I've led end-to-end development of production
+            features, including onboarding journeys, dashboards, authentication
+            flows, and 2FA systems. Skilled in translating Figma designs into
+            scalable UI, writing SRS documentation, and collaborating with
+            stakeholders. Passionate about creating clean, intuitive, and
+            user-focused experiences.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
