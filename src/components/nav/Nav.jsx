@@ -42,7 +42,7 @@ const Nav = () => {
         <RiServiceLine />
       </a>
       <a
-        href="#portfolio"
+        href="#featured"
         onClick={() => setActiveNav("#portfolio")}
         className={activeNav === "#portfolio" ? "active" : ""}
       >

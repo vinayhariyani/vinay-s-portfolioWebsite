@@ -3,6 +3,7 @@ import "./footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -17,18 +18,15 @@ const Footer = () => {
         <li>
           <a href="#about">About</a>
         </li>
-        {/* <li>
+        <li>
           <a href="#experience">Experience</a>
-        </li> */}
+        </li>
         <li>
           <a href="#services">Skills</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#featured">Portfolio</a>
         </li>
-        {/* <li>
-          <a href="#testimonials">Testimonials</a>
-        </li> */}
         <li>
           <a href="#contact">Contact</a>
         </li>
@@ -38,11 +36,11 @@ const Footer = () => {
         <a href="https://www.facebook.com/vinay.hariyani.37" target="_blank">
           <FaFacebookF className="foorter_socials-icon" />
         </a>
-        <a href="https://www.instagram.com/_vinay_1098/" target="_blank">
+        <a href="https://www.instagram.com/mevinayhariyani/" target="_blank">
           <FiInstagram className="foorter_socials-icon" />
         </a>
-        <a href="https://twitter.com/VinayHariyani7" target="_blank">
-          <IoLogoTwitter className="foorter_socials-icon" />
+        <a href="https://x.com/VHariyani99881" target="_blank">
+          <FaXTwitter className="foorter_socials-icon" />
         </a>
       </div>
       <div className="footer_copyright">

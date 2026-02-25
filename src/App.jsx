@@ -7,6 +7,7 @@ import Nav from "./components/nav/Nav";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/Footer/Footer";
+import FeaturedWork from "./components/featured/FeaturedWork";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Experience />
       <Services />
+      <FeaturedWork />
       <Portfolio />
       <Contact />
       <Footer />
